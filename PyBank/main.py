@@ -30,6 +30,7 @@ output_text =   "Financial Analysis" + \
                 "\nGreatest Increase in Profits: " + largest_profit_month[0] + ": ($" + str(largest_profit_month[1]) + ")" + \
                 "\nGreatest Decrease in Profits: " + largest_loss_month[0] + ": ($" + str(largest_loss_month[1]) + ")"
 
+#Print to console
 print(output_text)
 
 #Write to file
