@@ -67,7 +67,8 @@ with open(input_file, encoding='utf8') as input_csv, open(output_file,'w', newli
     
     #Write desired output CSV dictionary keys as header
     employee_writer = csv.DictWriter(output_csv,fieldnames=fieldnames)
-      
+    employee_writer.writeheader()
+    
     for emp in employee_data:
         #split DOB by '-' to format date in different order
         date = emp['DOB'].split("-")
