@@ -1,0 +1,25 @@
+(pythonData) brianparish@Brians-MacBook-Pro pyParagraph % python main.py
+(1)paragraph_2.txt
+(2)paragraph_1.txt
+Type the number for the file to read: 1
+You selected: paragraph_2.txt
+
+Paragraph Analysis
+-----------------
+Approximate Word Count: 294
+Approximate Sentence Count: 11
+Characters per word: 4.9
+Average sentence length: 26.7
+(pythonData) brianparish@Brians-MacBook-Pro pyParagraph % python main.py
+(1)paragraph_2.txt
+(2)paragraph_1.txt
+Type the number for the file to read: 2
+You selected: paragraph_1.txt
+
+Paragraph Analysis
+-----------------
+Approximate Word Count: 130
+Approximate Sentence Count: 5
+Characters per word: 6.3
+Average sentence length: 26.0
+(pythonData) brianparish@Brians-MacBook-Pro pyParagraph % 
