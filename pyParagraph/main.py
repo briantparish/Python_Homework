@@ -22,9 +22,8 @@ for files in input_files:
                 words = sentence.split(" ")
                 wordcount += len(words)
                 for chars in words:
-                    #Don't count non-letter characters
+                    #Don't count punctuation or special characters
                     chars = chars.replace(",","")
-                    chars = chars.replace("'","")
                     chars = chars.replace('"',"")
                     chars = chars.replace(".","")
                     chars = chars.replace("\n","")
