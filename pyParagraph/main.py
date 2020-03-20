@@ -1,3 +1,8 @@
+#Brian Parish
+#Python Homework
+#pyParagraph
+
+
 import re
 import os
 
@@ -17,26 +22,31 @@ if(int(user_input) < i):
     text_file = files[int(user_input)-1]
     print("You selected: " + text_file)
     file1 = open(text_file,'r')
-
+    
     for paragraph in file1:
-        #split paragraph up and count number of sentences
         sentences = re.split("(?<=[.!?]) +", paragraph)
-        sentencecount = len(sentences)
+        if(sentences[0] != "\n"):
+            sentencecount += len(sentences)
         for sentence in sentences:
-            #split sentence by spaces to count words
+        #split sentence by spaces to count words
             words = sentence.split(" ")
             wordcount += len(words)
             for chars in words:
+                #Don't count non-letter characters
+                chars = chars.replace(",","")
+                chars = chars.replace("'","")
+                chars = chars.replace('"',"")
+                chars = chars.replace(".","")
+                chars = chars.replace("\n","")
+                print(chars)
                 #count all characters in the words and sum them
                 totalchars += len(chars)
 
     print(f"\nParagraph Analysis\n" + \
-            "-----------------\n" + \
-            "Sentences: " + str(sentencecount) + \
-            "\nWords: " + str(wordcount) + \
+            "-----------------" + \
+            "\nApproximate Word Count: " + str(wordcount) + \
+            "\nApproximate Sentence Count: " + str(sentencecount) + \
             "\nCharacters per word: " + str(round(totalchars/wordcount, 1)) + \
             "\nAverage sentence length: " + str(round(wordcount/sentencecount, 1)))
 else:
     print("Invalid input, enter a value between 1 and " + str(i-1))
-
-
