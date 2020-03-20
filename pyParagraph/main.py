@@ -2,7 +2,6 @@
 #Python Homework
 #pyParagraph
 
-
 import re
 import os
 
