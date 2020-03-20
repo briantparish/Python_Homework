@@ -38,7 +38,6 @@ if(int(user_input) < i):
                 chars = chars.replace('"',"")
                 chars = chars.replace(".","")
                 chars = chars.replace("\n","")
-                print(chars)
                 #count all characters in the words and sum them
                 totalchars += len(chars)
 
