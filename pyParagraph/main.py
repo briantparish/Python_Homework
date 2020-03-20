@@ -10,18 +10,19 @@ wordcount = 0
 sentencecount = 0
 totalchars = 0
 
+#Create list of files to analyze
 input_files = ["paragraph_1.txt", "paragraph_2.txt"]
 
 for files in input_files:
     with open(files,'r')  as file1:
-        print("\nScanning file: " + files)
-
+        print("\nAnalyzing file: " + files + "...")
         for paragraph in file1:
+            #Count the number of sentences
             sentences = re.split("(?<=[.!?]) +", paragraph)
             if(sentences[0] != "\n"):
                 sentencecount += len(sentences)
             for sentence in sentences:
-            #split sentence by spaces to count words
+                #split sentence by spaces to count words
                 words = sentence.split(" ")
                 wordcount += len(words)
                 for chars in words:
