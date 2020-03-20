@@ -1,3 +1,7 @@
+#Brian Parish
+#Python Homework
+#pyPoll
+
 import csv
 import operator
 
