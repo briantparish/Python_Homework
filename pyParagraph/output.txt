@@ -1,5 +1,6 @@
 
-Scanning file: paragraph_1.txt
+Analyzing file: paragraph_1.txt...
+
 Paragraph Analysis
 -----------------
 Approximate Word Count: 130
@@ -7,10 +8,11 @@ Approximate Sentence Count: 5
 Characters per word: 6.3
 Average sentence length: 26.0
 
-Scanning file: paragraph_2.txt
+Analyzing file: paragraph_2.txt...
+
 Paragraph Analysis
 -----------------
-Approximate Word Count: 424
-Approximate Sentence Count: 16
-Characters per word: 5.4
-Average sentence length: 26.5
+Approximate Word Count: 294
+Approximate Sentence Count: 11
+Characters per word: 4.9
+Average sentence length: 26.7
