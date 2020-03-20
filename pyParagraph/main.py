@@ -1,4 +1,4 @@
-vimport re
+import re
 import os
 
 wordcount = 0
