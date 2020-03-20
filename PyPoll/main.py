@@ -3,7 +3,6 @@
 #pyPoll
 
 import csv
-import operator
 
 #Create dictionary of candidates with vote tally
 votes = {"Khan": 0,
@@ -18,7 +17,7 @@ with open('Resources/election_data.csv') as input_csv:
         votes[vote[2]] += 1
 
 #Find the winner of the election
-Winner = max(votes.items(), key=operator.itemgetter(1))[0]
+Winner = max(votes, key=votes.get) 
 #total number of votes
 count = sum(votes.values())
 
@@ -30,7 +29,7 @@ for candidate in votes:
     output_text += "\n" + candidate + ": " + str('{:,.3f}'.format(votes[candidate]/count * 100)) + "% (" + str(votes[candidate]) + ")"
 
 output_text +=  "\n------------------------------" + \
-                "\nThe winner is: " + Winner +  \
+                "\nThe winner is:  " + Winner +  \
                 "\n------------------------------"
 
 #Write results to console
